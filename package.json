@@ -1,0 +1,37 @@
+{
+  "name": "@high-standards-js/gitignore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "postinstall": "node src/postinstall.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@high-standards-js/base": "github:high-standards-js/base"
+  },
+  "devDependencies": {
+    "@high-standards-js/commitlint": "^1.0.2",
+    "@semantic-release/commit-analyzer": "8.0.1",
+    "@semantic-release/github": "7.0.7",
+    "@semantic-release/npm": "7.0.5",
+    "@semantic-release/release-notes-generator": "9.0.1",
+    "husky": "4.2.5",
+    "semantic-release": "17.0.8",
+    "commitlint": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
+    "git-authors-cli": "1.0.27"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "git-authors-cli"
+    }
+  },
+  "engines": {
+    "node": ">=12.16.1"
+  }
+}
