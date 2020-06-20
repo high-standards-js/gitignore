@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Setup Node.js
+      - name: 'Setup Node.js #100'
         uses: actions/setup-node@v1
         with:
           node-version: 12
