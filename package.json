@@ -8,7 +8,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@high-standards-js/base": "github:high-standards-js/base"
+    "@high-standards-js/base": "^1.7.4"
   },
   "devDependencies": {
     "@high-standards-js/commitlint": "^1.0.2",
